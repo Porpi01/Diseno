@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.layout {
+    height: 800px;
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    grid-template-rows: repeat(18, 1fr);
+    border: 1px solid black;
+}
+
+.caja{
+    border: 1px solid black;
+}
+
+.roja {
+    background-color: red;
+    grid-column: 2 / 3;   
+    grid-row: 1 /5;      
+}   
+
+.azul {
+    background-color: blue;
+    grid-column: 1 / 3;   
+    grid-row: 1 /9;  
+}
+
+
+.morada {
+    background-color: rgb(138, 14, 86);
+    grid-column:  3/4;   
+    grid-row: 1 /14;  
+}
+.verde {
+    background-color: green;
+    grid-column: 1 / 3;   
+    grid-row: 9/14;  
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-column: 1 / 4;   
+    grid-row: 14/19;  
+}
