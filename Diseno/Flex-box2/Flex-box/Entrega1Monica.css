@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  display: grid;
+  grid-column: 1 / 6;
+  border-bottom: 1px solid #e4e2e2;
+}
+
+@media screen and (max-width: 670px) {
+  #header {
+    grid-template-columns: 1fr; /* Single column in mobile view */
+  }
+
+  #menu ul {
+    margin-top: 0;
+  }
+
+  #titulo {
+    margin: 0 auto;
+  }
+
+  #menu {
+    margin: 0 auto;
+   
+  }
+}
+
+#titulo {
+  grid-column: 1 / 2;
+}
+
+#menu {
+  grid-column: 5 / 6;
+}
+
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(5, 1fr); 
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid #e4e2e2;
+  box-shadow:
+    5px 0 10px rgba(214, 212, 212, 0.663),
+    -5px 0 10px rgba(214, 212, 212, 0.663),
+    0 5px 10px rgba(214, 212, 212, 0.663),
+    0 -5px 10px rgba(214, 212, 212, 0.663);
+}
+
+#titulo h1 {
+  padding-bottom: 10px;
+  margin-left: 15px;
+  font-style: italic;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#menu li {
+  margin-right: 20px;
+}
+
+.linea {
+  border-bottom: 1px solid #e4e2e2;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  font-size: large;
+  box-sizing: border-box;
+  width: 200px;
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.categoria {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding: 14px;
+  background-color: rgb(178, 231, 233);
+  flex-direction: row;
+  margin-top: 10px;
+  box-sizing: border-box;
+  grid-column: 1 / 2;
+}
+
+.cajas {
+  display: grid;
+grid-column-start: 2;
+grid-column-end: 6;
+
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+grid-column: 1/6;
+}
+
+.fila1 {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 280px;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.fila1 img {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.fila1 p:nth-child(3) {
+  color: rgb(119, 117, 117);
+  margin-left: 5px;
+}
+
+.fila1 p:nth-child(2) {
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+#titulo2 {
+  margin: 0;
+  color: grey;
+  margin-left: 15px;
+  font-style: italic;
+}

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.layout {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    grid-template-areas:
+        "azul roja roja "
+        "azul azul2 morada"
+        "amarillo verde verde ";
+}
+
+.caja {
+  
+}
+
+.roja {
+    grid-area: roja;
+    background-color: red;
+}
+
+.azul {
+    grid-area: azul;
+    background-color: blue;
+}
+.azul2 {
+    grid-area: azul2;
+    background-color: blue;
+}
+
+.morada {
+    grid-area: morada;
+    background-color: rgb(138, 14, 86);
+}
+
+.verde {
+    grid-area: verde;
+    background-color: green;
+}
+
+.amarillo {
+    grid-area: amarillo;
+    background-color: yellow;
+}
