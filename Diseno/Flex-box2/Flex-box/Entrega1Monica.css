@@ -33,14 +33,14 @@ body {
 }
 
 #titulo {
-  grid-column: 1/6;
-  display: flex;
+  grid-column: 4/6;
+
   justify-content: flex-start;
   align-items: center;
 }
 
 #menu {
-  grid-column: 1/6;
+  grid-column: 2/6;
 }
 
 #contenedor {
@@ -88,6 +88,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  grid-column: 2/6;
 }
 
 .categoria {
@@ -102,6 +103,7 @@ body {
   flex-direction: column;
   margin-top: 10px;
   box-sizing: border-box;
+  
 }
 
 .cajas {
