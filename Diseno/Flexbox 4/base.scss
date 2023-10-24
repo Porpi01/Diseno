@@ -1,0 +1,50 @@
+// Contenido común a todas las páginas
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$primary-font: 'Roboto', sans-serif;
+$border-color: #e4e2e2;
+$box-shadow-color: rgba(214, 212, 212, 0.663);
+$font-size-large: large;
+$background-color: rgb(178, 231, 233);
+$marginLeftCategoria: 15px;
+$fontStyle: italic;
+$display: flex;
+$flexDirectionColumn: column;
+$flexDirectionFila: row;
+$alineacionTexto: center;
+$marginLeftP: 5px;
+$tamanoCategoria: 200px;
+
+body {
+  font-family: $primary-font;
+}
+
+#header {
+  display: $display;
+  flex-direction: $flexDirectionFila;
+  align-items: baseline;
+  border-bottom: 1px solid $border-color;
+
+  @media screen and (max-width: 670px) {
+    flex-direction: $flexDirectionColumn;
+    justify-content: space-between;
+
+    #menu {
+      ul {
+        margin-top: 0;
+      }
+      #titulo {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+#titulo {
+  flex-grow: 5;
+}
+
+#menu {
+  flex-grow: 1;
+}
