@@ -14,7 +14,7 @@ body {
 }
 
 @media screen and (max-width: 670px) {
-  #header {
+ #header {
     grid-column: 1/6;
     grid-row: 1/2;
   }
@@ -47,8 +47,8 @@ body {
 
 #contenedor {
   display: grid;
-  grid-template-columns: repeat(5, 1);
-  grid-template-rows: repeat(4, 1);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 30%);
   justify-content: space-between;
   align-items: center;
   padding: 25px;
@@ -76,6 +76,9 @@ body {
 }
 
 .categorias {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
   grid-column: 1/1;
   grid-row: 2/4;
 }
@@ -110,8 +113,9 @@ body {
 }
 
 .cajas {
+  flex-grow: 1;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin-right: 10px;
   margin-left: 12px;
   margin-top: 20px;
@@ -122,8 +126,8 @@ body {
 
 
 .flex {
-
-  display: grid;
+  display: flex;
+  flex-flow: row nowrap;
   grid-column: 1/6;
   grid-row: 2/4;
 }
