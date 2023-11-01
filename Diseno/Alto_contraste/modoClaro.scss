@@ -1,0 +1,58 @@
+
+//Modo claro
+
+//Variables que van a cambiar en función del contraste 
+$border-color: #e4e2e2;
+$box-shadow-color: rgba(214, 212, 212, 0.663);
+$background-colorCategorias: rgb(178, 231, 233);
+$colorPalabras:  rgb(119, 117, 117);
+$background-color: rgb(255, 255, 255);
+
+
+body {
+background-color:$background-color ;
+}
+
+
+
+#header {
+  border-bottom: 1px solid $border-color;
+
+}
+
+#contenedor {
+
+  border: 1px solid $border-color;
+  box-shadow:
+    5px 0 10px $box-shadow-color,
+    -5px 0 10px $box-shadow-color,
+    0 5px 10px $box-shadow-color,
+    0 -5px 10px $box-shadow-color;
+}
+
+.linea {
+  border-bottom: 1px solid $border-color;
+}
+
+.categoria {
+
+  background-color: $background-colorCategorias;
+}
+
+.fila1 {
+  border: 1px solid #ccc;
+}
+
+p {
+
+  &:nth-child(3) {
+    color: $colorPalabras;
+ 
+  }
+}
+
+#titulo2 {
+
+  color: $colorPalabras;
+ 
+}

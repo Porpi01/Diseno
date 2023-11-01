@@ -1,5 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
+  background-color: rgb(22, 22, 22);
+}
+
+#header {
+  border-bottom: 1px solid #fffefe;
+}
+
+#contenedor {
+  border: 1px solid #fffefe;
+  box-shadow: 5px 0 10px rgba(214, 212, 212, 0.663), -5px 0 10px rgba(214, 212, 212, 0.663), 0 5px 10px rgba(214, 212, 212, 0.663), 0 -5px 10px rgba(214, 212, 212, 0.663);
+}
+
+#titulo h1 {
+  color: rgb(255, 255, 255);
+}
+
+#menu ul {
+  color: rgb(255, 255, 255);
+}
+
+.linea {
+  border-bottom: 1px solid #fffefe;
+  color: rgb(255, 255, 255);
+}
+
+.categoria {
+  background-color: rgb(255, 255, 255);
+}
+
+.fila1 {
+  border: 1px solid #ccc;
+}
+
+p:nth-child(3) {
+  color: rgb(255, 255, 255);
+}
+p:nth-child(2) {
+  color: rgb(255, 255, 255);
+}
+
+#titulo2 {
+  color: rgb(255, 255, 255);
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -7,27 +52,40 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  border-bottom: 1px solid #e4e2e2;
 }
 @media screen and (max-width: 670px) {
   #header {
     flex-direction: column;
     justify-content: space-between;
   }
+  #header #menu ul {
+    margin-top: 0;
+  }
+  #header #menu #titulo {
+    margin: 0 auto;
+  }
 }
 
 #titulo {
   flex-grow: 5;
 }
+
+#menu {
+  flex-grow: 1;
+}
+
+#contenedor {
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
 #titulo h1 {
   padding-bottom: 10px;
   margin-left: 15px;
   font-style: italic;
 }
 
-#menu {
-  flex-grow: 1;
-}
 #menu ul {
   display: flex;
   list-style-type: none;
@@ -36,23 +94,7 @@ body {
   margin-right: 20px;
 }
 
-#contenedor {
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-  border: 1px solid #e4e2e2;
-  box-shadow: 5px 0 10px rgba(214, 212, 212, 0.663), -5px 0 10px rgba(214, 212, 212, 0.663), 0 5px 10px rgba(214, 212, 212, 0.663), 0 -5px 10px rgba(214, 212, 212, 0.663);
-}
-
-#titulo2 {
-  margin: 0;
-  color: grey;
-  margin-left: 15px;
-  font-style: italic;
-}
-
 .linea {
-  border-bottom: 1px solid #e4e2e2;
   margin-top: 30px;
   padding-bottom: 5px;
   margin-left: 15px;
@@ -69,7 +111,6 @@ body {
   width: 200px;
   height: 50px;
   padding: 14px;
-  background-color: #b2e7e9;
   flex-direction: row;
   margin-top: 10px;
   box-sizing: border-box;
@@ -90,7 +131,6 @@ body {
 }
 
 .fila1 {
-  border: 1px solid #e4e2e2;
   margin-right: 15px;
   margin-bottom: 15px;
   width: 280px;
@@ -98,14 +138,10 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-.fila1:last-child {
-  margin-right: 5;
-}
 .fila1 p {
   margin: 0;
 }
 .fila1 p:nth-child(3) {
-  color: #333;
   margin-left: 5px;
 }
 .fila1 p:nth-child(2) {
@@ -113,4 +149,10 @@ body {
   margin-left: 5px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+#titulo2 {
+  margin: 0;
+  margin-left: 15px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=stylesOscuro.css.map */

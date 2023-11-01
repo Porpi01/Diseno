@@ -1,0 +1,78 @@
+//Modo oscuro
+
+
+//Variables que van a cambiar en función del contraste
+$border-color: #fffefe;
+$box-shadow-color: rgba(214, 212, 212, 0.663);
+$background-colorCategorias: rgb(255, 255, 255);
+$colorPalabras:  rgb(255, 255, 255);
+$background-color: rgb(22, 22, 22);
+
+
+body {
+background-color:$background-color ;
+}
+
+
+#header {
+  border-bottom: 1px solid $border-color;
+
+}
+
+#contenedor {
+
+  border: 1px solid $border-color;
+  box-shadow:
+    5px 0 10px $box-shadow-color,
+    -5px 0 10px $box-shadow-color,
+    0 5px 10px $box-shadow-color,
+    0 -5px 10px $box-shadow-color;
+}
+
+#titulo h1 {
+    color: $colorPalabras;
+
+}
+
+#menu {
+    ul {
+    
+        color: $colorPalabras;
+     
+    }
+  }
+  
+ 
+  
+.linea {
+  border-bottom: 1px solid $border-color;
+
+    color: $colorPalabras;
+
+}
+
+.categoria {
+
+  background-color: $background-colorCategorias;
+}
+
+.fila1 {
+  border: 1px solid #ccc;
+}
+
+p {
+
+  &:nth-child(3) {
+    color: $colorPalabras;
+ 
+  }
+  &:nth-child(2) {
+    color: $colorPalabras;
+  }
+}
+
+#titulo2 {
+
+  color: $colorPalabras;
+ 
+}
