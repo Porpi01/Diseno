@@ -6,7 +6,8 @@ $box-shadow-color: rgba(214, 212, 212, 0.663);  // Color para sombras
 $background-colorCategorias: rgb(178, 231, 233);  // Color de fondo para categorías
 $colorPalabras:  rgb(119, 117, 117);  // Color de texto para palabras
 $background-color: rgb(255, 255, 255);  // Color de fondo principal
-
+$colorFondoBoton:rgb(0, 0, 0); //Color fondo botones
+$colorBoton:rgb(255, 255, 255); //Color  botones
 body {
   background-color: $background-color;  // Aplicar el color de fondo principal al cuerpo
 }
@@ -24,6 +25,10 @@ body {
     0 -5px 10px $box-shadow-color;  // Aplicar una sombra con el color definido en múltiples direcciones
 }
 
+.btn {
+  background-color: $colorFondoBoton;
+  color: $colorBoton
+  }
 .linea {
   border-bottom: 1px solid $border-color;  // Aplicar un borde inferior con el color definido a elementos con clase .linea
 }

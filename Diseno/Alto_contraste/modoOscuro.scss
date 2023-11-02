@@ -3,9 +3,10 @@
 // Variables que van a cambiar en función del contraste
 $border-color: #fffefe; // Color para los bordes en modo oscuro
 $box-shadow-color: rgba(214, 212, 212, 0.663); // Color para las sombras
-$background-colorCategorias: rgb(54, 74, 252); // Color de fondo para categorías en modo oscuro
+$background-colorCategorias: rgb(76, 89, 209); // Color de fondo para categorías en modo oscuro
 $colorPalabras: rgb(255, 255, 255); // Color de texto para palabras en modo oscuro
 $background-color: rgb(22, 22, 22); // Color de fondo principal en modo oscuro
+$colorBoton:rgb(255, 255, 255); //Color botones
 
 body {
   background-color: $background-color; // Aplicar el color de fondo principal al cuerpo
@@ -24,6 +25,7 @@ body {
     0 -5px 10px $box-shadow-color; // Aplicar una sombra con el color definido en múltiples direcciones
 }
 
+
 #titulo h1 {
   color: $colorPalabras; // Cambiar el color del texto del encabezado h1 a $colorPalabras
 }
@@ -34,6 +36,9 @@ body {
   }
 }
 
+.btn {
+background-color: $colorBoton;
+}
 .linea {
   border-bottom: 1px solid $border-color; // Aplicar un borde inferior con el color definido en modo oscuro a elementos con clase .linea
   color: $colorPalabras; // Cambiar el color de texto a $colorPalabras
@@ -45,7 +50,7 @@ body {
 }
 
 .fila1 {
-  border: 1px solid #ccc; // Aplicar un borde con un color diferente (#ccc) a elementos con clase .fila1
+  border: 1px solid $border-color; // Aplicar un borde con un color diferente (#ccc) a elementos con clase .fila1
 }
 
 p {

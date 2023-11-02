@@ -1,4 +1,4 @@
-@use 'modoOscuro.scss'; // Importar un archivo 'modoOscuro.scss'
+@use 'modoClaro.scss'; // Importar un archivo 'modoOscuro.scss'
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // Importar la fuente 'Roboto' de Google Fonts
 
@@ -35,6 +35,9 @@ body {
       #titulo {
         margin: 0 auto; // Establecer margen automático para el título
       }
+
+  
+
     }
   }
 }
@@ -45,6 +48,10 @@ body {
 
 #menu {
   flex-grow: 1; // Hacer que el menú ocupe menos espacio en el flex
+}
+
+.btn {
+  margin-right: 6px;
 }
 
 #contenedor {
