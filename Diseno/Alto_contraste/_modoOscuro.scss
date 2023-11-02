@@ -1,0 +1,73 @@
+// Modo oscuro
+
+// Variables que van a cambiar en función del contraste
+$border-color:                #fffb00;                    // Color para los bordes en modo oscuro
+$box-shadow-color:            rgba(214, 212, 212, 0.663); // Color para las sombras
+$background-colorCategorias:  #fffb00;                    // Color de fondo para categorías en modo oscuro
+$colorPalabras:               #fffb00;                    // Color de texto para palabras en modo oscuro
+$background-color:            rgb(22, 22, 22);            // Color de fondo principal en modo oscuro
+$colorBoton:                  #fffb00;                    //Color botones
+$colorBordeCajas:             #fffb00;                    //Color borde cajas
+$colorLetrasCategoria:        rgb(0, 0, 0);               //Color letras categoria
+
+@mixin definEstilo {
+
+  body {
+    background-color: $background-color; // Aplicar el color de fondo principal al cuerpo
+  }
+
+  #header {
+    border-bottom: 1px solid $border-color; // Aplicar un borde inferior con el color definido en modo oscuro
+  }
+
+  #contenedor {
+    border: 1px solid $border-color; // Aplicar un borde con el color definido en modo oscuro
+    box-shadow:
+      5px 0 10px $box-shadow-color,
+      -5px 0 10px $box-shadow-color,
+      0 5px 10px $box-shadow-color,
+      0 -5px 10px $box-shadow-color; // Aplicar una sombra con el color definido en múltiples direcciones
+  }
+
+
+  #titulo h1 {
+    color: $colorPalabras; // Cambiar el color del texto del encabezado h1 a $colorPalabras
+  }
+
+  #menu {
+    ul {
+      color: $colorPalabras; // Cambiar el color del texto de las listas ul a $colorPalabras
+    }
+  }
+
+  .btn {
+  background-color: $colorBoton; //Cambiar color de los botones
+  } 
+  .linea {
+    border-bottom: 1px solid $border-color; // Aplicar un borde inferior con el color definido en modo oscuro a elementos con clase .linea
+    color: $colorPalabras; // Cambiar el color de texto a $colorPalabras
+  }
+
+  .categoria {
+    background-color: $background-colorCategorias; // Aplicar el color de fondo de categorías en modo oscuro
+    color: $colorLetrasCategoria; // Cambiar el color de texto a $colorPalabras
+  }
+
+  .fila1 {
+    border: 1px solid $colorBordeCajas; // Aplicar un borde con un color diferente (#ccc) a elementos con clase .fila1
+  }
+
+  p {
+    &:nth-child(3) {
+      color: $colorPalabras; // Cambiar el color de texto a $colorPalabras en el tercer párrafo
+    }
+
+    &:nth-child(2) {
+      color: $colorPalabras; // Cambiar el color de texto a $colorPalabras en el segundo párrafo
+    }
+  }
+
+  #titulo2 {
+    color: $colorPalabras; // Cambiar el color de texto a $colorPalabras para elementos con ID #titulo2
+  }
+}
