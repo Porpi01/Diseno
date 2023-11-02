@@ -26,7 +26,8 @@ body {
 }
 
 .categoria {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 26, 255);
+  color: rgb(255, 255, 255);
 }
 
 .fila1 {
