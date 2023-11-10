@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ritmonet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://tusitiodemusica.com" target="_blank">
+        <img src="nota_musical.webp" width="35" height="28" alt="Logo">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#">
+          Inicio
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Géneros
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">
+              Clásica
+            </a>
+            <a class="navbar-item" href="#">
+              Jazz
+            </a>
+            <a class="navbar-item" href="#">
+              Pop
+            </a>
+            <a class="navbar-item" href="#">
+              Rock
+            </a>
+            <a class="navbar-item" href="#">
+              Hip-Hop
+            </a>
+            <a class="navbar-item" href="#">
+              Electrónica
+            </a>
+            <a class="navbar-item" href="#">
+              R&B
+            </a>
+            <a class="navbar-item" href="#">
+              Indie
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item" href="#">
+          Artistas
+        </a>
+
+        <a class="navbar-item" href="#">
+          Álbumes
+        </a>
+
+        <a class="navbar-item" href="#">
+          Novedades
+        </a>
+
+        <a class="navbar-item" href="#">
+          Sobre nosotros
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section mt-5">
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column has-text-centered">
+        <div class="item">
+          <a href="https://www.biografiasyvidas.com/monografia/mozart/" target="_blank">
+            <img src="Mozart.jpeg" alt="Mozart">
+          </a>
+          <h1 class="title is-size-4" >Wolfgang Amadeus Mozart</h1>
+          <p class="has-text-justified">Wolfgang Amadeus Mozart (1756-1791) fue un prodigioso compositor austriaco del período clásico. Desde
+            temprana edad, destacó por su virtuosismo musical. Con más de 600 obras en su haber, creó piezas maestras en
+            ópera, música de cámara y sinfonías. Entre sus famosas composiciones se encuentran "Las bodas de Fígaro" y
+            "La Flauta Mágica". Mozart dejó un legado duradero y es considerado uno de los genios musicales más grandes
+            de la historia. Falleció a la edad de 35 años.</p>
+        </div>
+      </div>
+      <div class="column has-text-centered">
+        <div class="item">
+          <a href="https://www.biografiasyvidas.com/biografia/b/beethoven.htm" target="_blank">
+            <img src="Beethoven.jpg" alt="Pachelbel">
+          </a>
+          <h1 class="title is-size-4" >Ludwig van Beethoven</h1>
+          <p class="has-text-justified">Ludwig van Beethoven (1770-1827) fue un genio musical alemán de la era clásica y romántica. Nacido en Bonn,
+            su sordera progresiva no impidió su prodigioso talento. Compositor de renombre, creó obras maestras como la
+            Novena Sinfonía y la Sonata para piano "Claro de luna". Beethoven es venerado por su impacto revolucionario
+            en la música y su habilidad para expresar profundas emociones a través de sus composiciones. Falleció el 26
+            de marzo de 1827 en Viena, dejando un legado que perdura como uno de los más influyentes en la historia de
+            la música occidental.</p>
+        </div>
+
+      </div>
+      <div class="column">
+        <div class="item has-text-centered">
+          <a href="https://www.biografiasyvidas.com/biografia/w/wagner.htm" target="_blank">
+            <img src="RichardWagner (2).jpg" alt="wagner">
+          </a>
+          <h1 class="title is-size-4" >Richard Wagner</h1>
+          <p class="has-text-justified">
+            Richard Wagner (1813-1883) fue un influyente compositor y director de orquesta alemán del periodo romántico.
+            Conocido por sus óperas épicas, como "El anillo del nibelungo", y su concepto de la "obra de arte total",
+            Wagner dejó un legado duradero en la música y la ópera. Su vida estuvo marcada por conexiones filosóficas y
+            políticas. Falleció el 13 de febrero de 1883 en Venecia, Italia.</p>
+        </div>
+      </div>
+      <div class="column"></div>
+
+    </div>
+  </section>
+  <footer class="footer mt-5">
+    <div class="content has-text-centered">
+      <p >
+        <strong>Ritmonet</strong> - Tu sitio de referencia para explorar y disfrutar de la música.
+      </p>
+      <p >
+        Síguenos en las redes sociales: 
+        <a href="#" target="_blank">Facebook</a>,
+        <a href="#" target="_blank">Twitter</a>,
+        <a href="#" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
