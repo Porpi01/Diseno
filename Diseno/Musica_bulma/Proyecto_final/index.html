@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Videojuegos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        Tienda de Videojuegos
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#inicio">Inicio</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#categorias">
+            Videojuegos
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#categoria-accion">
+              Xbox series
+            </a>
+            <a class="navbar-item" href="#categoria-aventura">
+              PS4
+            </a>
+            <a class="navbar-item" href="#categoria-rpg">
+              PS5
+            </a>
+            <a class="navbar-item" href="#categoria-accion">
+                Xbox 360
+              </a>
+              <a class="navbar-item" href="#categoria-aventura">
+                PC
+              </a>
+              <a class="navbar-item" href="#categoria-rpg">
+             nintendo switch
+              </a>
+            <!-- Agregar más categorías si es necesario -->
+          </div>
+          <a class="navbar-link" href="#categorias">
+            Seminuevos
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#categorias">
+              Electrónica
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#categoria-accion">
+                Xbox series
+              </a>
+              <a class="navbar-item" href="#categoria-aventura">
+                PS4
+              </a>
+              <a class="navbar-item" href="#categoria-rpg">
+                PS5
+              </a>
+              <a class="navbar-item" href="#categoria-accion">
+                  Xbox 360
+                </a>
+                <a class="navbar-item" href="#categoria-aventura">
+                  PC
+                </a>
+                <a class="navbar-item" href="#categoria-rpg">
+               nintendo switch
+                </a>
+              <!-- Agregar más categorías si es necesario -->
+            </div>
+        </div>
+        <a class="navbar-item" href="#contacto">Contacto</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Registrarse</strong>
+            </a>
+            <a class="button is-light">
+              Iniciar sesión
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Sección de catálogo con cards -->
+  <section id="catalogo" class="section">
+    <div class="container">
+      <h1 class="title">Catálogo de Videojuegos</h1>
+      <div class="columns is-multiline">
+        <!-- Card 1 -->
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Nombre del Juego 1</p>
+              <p class="subtitle is-6">Plataforma</p>
+              <p>Precio de venta: $XX | Precio de compra: $XX</p>
+              <!-- Más detalles o enlace a la página individual del juego -->
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Nombre del Juego 2</p>
+              <p class="subtitle is-6">Plataforma</p>
+              <p>Precio de venta: $XX | Precio de compra: $XX</p>
+              <!-- Más detalles o enlace a la página individual del juego -->
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/640x480" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Nombre del Juego 2</p>
+                <p class="subtitle is-6">Plataforma</p>
+                <p>Precio de venta: $XX | Precio de compra: $XX</p>
+                <!-- Más detalles o enlace a la página individual del juego -->
+              </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                  <h2 class="title is-4">Filtros</h2>
+                  <!-- Filtros simulados -->
+                  <div class="field">
+                    <label class="label">Precio</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Precio máximo">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Categoría</label>
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Todos</option>
+                          <option>Acción</option>
+                          <option>Aventura</option>
+                          <option>RPG</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Derechos de autor © 2023. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach($el => {
+          $el.addEventListener('click', () => {
+            const target = $el.dataset.target;
+            const $target = document.getElementById(target);
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
