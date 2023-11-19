@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Videojuegos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="logo.png" width="50" height="50">
+      </a>
+      <h1 class="navbar-item">EPICGAME</h1>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item" href="#">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            <span class="icon">
+              <i class="fab fa-playstation"></i>
+            </span>
+            <span>Videojuegos</span>
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Xbox series</a>
+            <a class="navbar-item" href="#">PS4</a>
+            <a class="navbar-item" href="#">PS5</a>
+            <a class="navbar-item" href="#">PC</a>
+            <a class="navbar-item" href="#">Switch</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            <span class="icon">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+            <span>Electrónica</span>
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Smartphones</a>
+            <a class="navbar-item" href="#">Tablets</a>
+            <a class="navbar-item" href="#">Auriculares</a>
+            <a class="navbar-item" href="#">Altavoces</a>
+            <a class="navbar-item" href="#">Cámaras</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="#">
+          <span class="icon">
+            <i class="fas fa-tshirt"></i>
+          </span>
+          <span>Merchandising</span>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <div class="panel-block is-hidden-mobile">
+          <p class="control has-icons-left">
+            <input class="input" type="text" placeholder="Search">
+            <span class="icon is-left">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+          </p>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <i class="material-icons">person_add</i>
+            </a>
+            <a class="button is-primary">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Notificación -->
+  <section>
+    <div class="notification is-primary">
+      ¡Oferta especial por tiempo limitado! ¡Compra ahora y obtén un descuento del 20%!
+    </div>
+  </section>
+  <!-- Tabs -->
+  <section>
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active"><a href="#videojuegos">Ofertas</a></li>
+        <li><a href="#categorias">Nuevos lanzamientos</a></li>
+        <li><a href="#contacto">Eventos</a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="catalogo" class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- Filtros móvil -->
+        <div class="column is-one-quarter">
+          <div class="level is-mobile">
+            <div class="level-left">
+              <button id="showFilters" class="button is-primary is-hidden-desktop is-hidden-tablet">Mostrar
+                Filtros</button>
+            </div>
+            <!-- Buscador móvil-->
+            <div class="level-right">
+              <div class="panel-block is-hidden-desktop is-hidden-tablet">
+                <p class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Search">
+                  <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Filtros ordenador y tablet -->
+          <div id="filters" class="box is-hidden-mobile">
+
+            <h2 class="title is-4">Filtros</h2>
+            <!-- Filtro por precio-->
+            <div class="field">
+              <label class="label">Precio</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Precio máximo">
+              </div>
+            </div>
+            <!-- Filtro por categoria-->
+            <div class="field">
+              <label class="label">Categoría</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Todos</option>
+                    <option>Acción</option>
+                    <option>Aventura</option>
+                    <option>Estrategia</option>
+                    <option>Fantasía</option>
+                    <option>Simulación</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- Filtro por clasificación-->
+            <div class="field">
+              <label class="label">Clasificación</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Todas</option>
+                    <option>PEGI +12</option>
+                    <option>PEGI +16</option>
+                    <option>PEGI +18</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- Filtro por año de lanzamiento-->
+            <div class="field">
+              <label class="label">Año de lanzamiento</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Año">
+              </div>
+            </div>
+
+            <!-- Filtro por desarrollador -->
+            <div class="field">
+              <label class="label">Desarrollador</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Nombre del desarrollador">
+              </div>
+            </div>
+
+            <!-- Filtro por idioma -->
+            <div class="field">
+              <label class="label">Idioma</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Todos</option>
+                    <option>Inglés</option>
+                    <option>Español</option>
+                    <option>Francés</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Notificación horario -->
+          <div class="notification is-warning">
+            <button class="delete"></button>
+            ¡Atención! Cambios en el horario de atención.
+          </div>
+          <!-- Videos de estrenos  -->
+          <h2 class="is-hidden-mobile">Estrenos</h2>
+          <figure class="image is-16by9 is-hidden-mobile">
+            <iframe class="has-ratio" width="560" height="315"
+              src="https://www.youtube.com/embed/S6GTl_vPRvU?si=hsWx4Tl6UTOm9esN" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </figure>
+          <figure class="image is-16by9 mt-5 is-hidden-mobile">
+            <iframe class="has-ratio" width="560" height="315"
+              src="https://www.youtube.com/embed/p8UsHhOjjzg?si=-GNWTuzutv7XoSJY" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </figure>
+        </div>
+
+        <!-- Catálogo de videojuegos -->
+        <div class="column is-three-quarters-table ">
+          <h1 class="title">Catálogo de Videojuegos</h1>
+          <div class="columns is-multiline">
+            <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-3by3">
+                    <img src="Hogwarts_legacy.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Hogwats Legacy</p>
+                  <p class="subtitle is-6">PEGI 12</p>
+                  <p>Venta: 44´99€</p>
+                  <p>Compra: 22´99€</p>
+                  <div class="level">
+
+                    <div class="level-item has-text-centered">
+                      <!-- Botón para abrir el modal 1 -->
+                      <button class="button is-primary js-modal-trigger" data-target="modal-1">Detalles</button>
+                      <!-- Más detalles o enlace a la página individual del juego -->
+                    </div>
+                  </div>
+                  <div class="level-item has-text-centered">
+                    <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
+
+                      <span class="tag is-info">Nintendo Switch</span>
+                      <span class="tag is-success">PS4</span>
+                      <span class="tag is-success">PS5</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="modal is-fullwidth is-mobile" id="modal-1">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Hogwarts Legacy</p>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                      <strong>Características:</strong><br>
+
+                      <ul>
+                        <li><strong>Explora un mundo abierto</strong><br>
+                          El mundo mágico te aguarda. Explora y recorre libremente el Castillo de Hogwarts, Hogsmeade,
+                          el Bosque
+                          Prohibido y las tierras que lo rodean.</li><br>
+
+                        <li><strong>Sé el mago o la bruja que quieras ser</strong><br>
+                          Aprende hechizos, elabora pociones, cultiva plantas y cuida de animales fantásticos a lo largo
+                          del
+                          viaje. Sé seleccionado para tu casa, forja relaciones y aprende las habilidades que te
+                          conducirán a
+                          convertirte en el mago o bruja que quieras ser.</li><br>
+
+                        <li><strong>Vive una aventura nueva en el mundo mágico</strong><br>
+                          Vive el mundo mágico en una época remota sin explorar y descubre una verdad oculta de ese
+                          pasado.
+                          Combate contra trols, magos tenebrosos, duendes y más en tu camino hacia la gran batalla
+                          contra un
+                          peligroso enemigo que amenaza el destino del mundo mágico.</li><br>
+
+                        <li><strong>*Requiere conexión a internet.</strong></li>
+                      </ul>
+                      <strong>Galería:</strong><br>
+                      <figure class="image is-16by9">
+                        <img src="hogwarts-legacy img1.jpg">
+                      </figure>
+                      <hr> <!-- Separador horizontal -->
+                      <figure class="image is-16by9">
+                        <img src="hogwarts-legacy-img2.webp">
+                      </figure>
+                    </section>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-3by3">
+                        <img src="gran_turismo.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <p class="title is-4">Hogwats Legacy</p>
+                      <p class="subtitle is-6">PEGI 12</p>
+                      <p>Venta: 44´99€</p>
+                      <p>Compra: 22´99€</p>
+                      <div class="level">
+    
+                        <div class="level-item has-text-centered">
+                          <!-- Botón para abrir el modal 1 -->
+                          <button class="button is-primary js-modal-trigger" data-target="modal-1">Detalles</button>
+                          <!-- Más detalles o enlace a la página individual del juego -->
+                        </div>
+                      </div>
+                      <div class="level-item has-text-centered">
+                        <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
+    
+                          <span class="tag is-info">Nintendo Switch</span>
+                          <span class="tag is-success">PS4</span>
+                          <span class="tag is-success">PS5</span>
+                        </div>
+    
+                      </div>
+                    </div>
+    
+                    <div class="modal is-fullwidth is-mobile" id="modal-1">
+                      <div class="modal-background"></div>
+                      <div class="modal-card">
+                        <header class="modal-card-head">
+                          <p class="modal-card-title">Hogwarts Legacy</p>
+                          <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                          <strong>Características:</strong><br>
+    
+                          <ul>
+                            <li><strong>Explora un mundo abierto</strong><br>
+                              El mundo mágico te aguarda. Explora y recorre libremente el Castillo de Hogwarts, Hogsmeade,
+                              el Bosque
+                              Prohibido y las tierras que lo rodean.</li><br>
+    
+                            <li><strong>Sé el mago o la bruja que quieras ser</strong><br>
+                              Aprende hechizos, elabora pociones, cultiva plantas y cuida de animales fantásticos a lo largo
+                              del
+                              viaje. Sé seleccionado para tu casa, forja relaciones y aprende las habilidades que te
+                              conducirán a
+                              convertirte en el mago o bruja que quieras ser.</li><br>
+    
+                            <li><strong>Vive una aventura nueva en el mundo mágico</strong><br>
+                              Vive el mundo mágico en una época remota sin explorar y descubre una verdad oculta de ese
+                              pasado.
+                              Combate contra trols, magos tenebrosos, duendes y más en tu camino hacia la gran batalla
+                              contra un
+                              peligroso enemigo que amenaza el destino del mundo mágico.</li><br>
+    
+                            <li><strong>*Requiere conexión a internet.</strong></li>
+                          </ul>
+                          <strong>Galería:</strong><br>
+                          <figure class="image is-16by9">
+                            <img src="hogwarts-legacy img1.jpg">
+                          </figure>
+                          <hr> <!-- Separador horizontal -->
+                          <figure class="image is-16by9">
+                            <img src="hogwarts-legacy-img2.webp">
+                          </figure>
+                        </section>
+    
+                      </div>
+                    </div>
+
+
+
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content">
+      <nav class="level">
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-home"></i></span> Home
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-info-circle"></i></span> Sobre nosotros
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-cogs"></i></span> Servicios
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-envelope"></i></span> Contacto
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-shield-alt"></i></span> Política de privacidad
+          </a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link is-info" href="#">
+            <span class="icon"><i class="fas fa-file-contract"></i></span> Terminos de servicio
+          </a>
+        </p>
+      </nav>
+      <div class="has-text-centered">
+        <p>&copy; 2023 EPICGAME</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
