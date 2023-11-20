@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="logo.png" width="50" height="50">
+            </a>
+            <h1 class="navbar-item">EPICGAME</h1>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+
+                <a class="navbar-item" href="#">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        <span class="icon">
+                            <i class="fab fa-playstation"></i>
+                        </span>
+                        <span>Videojuegos</span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Xbox series</a>
+                        <a class="navbar-item" href="#">PS4</a>
+                        <a class="navbar-item" href="#">PS5</a>
+                        <a class="navbar-item" href="#">PC</a>
+                        <a class="navbar-item" href="#">Switch</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        <span class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <span>Electrónica</span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Smartphones</a>
+                        <a class="navbar-item" href="#">Tablets</a>
+                        <a class="navbar-item" href="#">Auriculares</a>
+                        <a class="navbar-item" href="#">Altavoces</a>
+                        <a class="navbar-item" href="#">Cámaras</a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="#">
+                    <span class="icon">
+                        <i class="fas fa-tshirt"></i>
+                    </span>
+                    <span>Merchandising</span>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="panel-block is-hidden-mobile">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search">
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <i class="material-icons">person_add</i>
+                        </a>
+                        <a class="button is-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+        <section class="main-content">
+            <div class="container">
+                <h1 class="title is-1 mt-3">HOGWARTS LEGACY STANDARD</h1>
+                <div class="columns">
+                    <div class="column is-half">
+                        <figure class="image is-1by1">
+                            <img src="Hogwarts_legacy.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="column is-half">
+                        <div class="content">
+                            <div class="level">
+                                <div class="level-item">
+                            <h3 class="title is-4">PLATAFORMAS</h3>
+                                </div>
+                                <div class="level-item">
+                            <div  class="tags has-text-centered is-flex-mobile">
+                                <span class="tag is-success" id="switch">Nintendo Switch</span>
+                                <span class="tag is-success" id="ps4">PS4</span>
+                                <span class="tag is-success" id="ps5">PS5</span>
+                                <span class="tag is-success" id="xboxX">Xbox Series X</span>
+                            </div>
+                              
+                            </div>
+                            </div>
+                            
+                            <div class="level">
+                                <div class="level-item">
+                                    <h3 class="title is-4">VALORACIONES</h3>
+                                    
+                                    <div class="ratings">
+                                        <div class="ratings">
+                                            <span class="icon is-large has-text-warning">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="icon is-large has-text-warning">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="icon is-large has-text-warning">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="icon is-large has-text-warning">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            <span class="icon is-large has-text-warning">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                          
+                            </div>
+                            <div class="level">
+                                <div class="level-item">
+                                    <h3 class="title is-4">PRECIO: 22´99€</h3>
+                                </div>
+                                <div class="level-item">
+                                    <button class="button is-info">Comprar</button>
+                                </div>
+                            </div>
+                            <figure class="image is-16by9 mt-5 is-hidden-mobile">
+                                <iframe class="has-ratio"  width="560" height="315"
+                                src="https://www.youtube.com/embed/dKvCgTFCn9k?si=Sn_fZNMmkjeap3v_"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                              </figure>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-description has-text-justified">
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <h2 class="title is-3">Hogwarts Legacy</h2>
+                    <p>
+                        Experimenta el Hogwarts del siglo XIX y decide el destino del mundo mágico. Hogwarts Legacy es
+                        un
+                        inmersivo RPG de acción de mundo abierto ambientado en el universo que nos descubrieron los
+                        libros de
+                        Harry Potter. Embárcate en un viaje por lugares únicos y conocidos mientras exploras y descubres
+                        bestias
+                        mágicas, personalizas tu personaje y creas pociones, dominas el lanzamiento de hechizos, mejoras
+                        tus
+                        talentos y te conviertes en el mago que deseas ser.
+                    </p><br>
+                    <p>
+                        Experimenta el Hogwarts del siglo XIX. Tu personaje es un estudiante que posee la clave a un
+                        antiguo
+                        secreto que amenaza con destruir el mundo mágico. Descubre cómo se vive en Hogwarts, haz
+                        aliados,
+                        enfréntate a magos oscuros y decide el destino del mundo mágico. Tú defines tu legado. Vive la
+                        historia
+                        nunca escrita.
+                    </p><br>
+                    <p>
+                        Explora un mundo abierto. El mundo mágico te espera. Deambula con total libertad por Hogwarts,
+                        Hogsmeade, el Bosque Prohibido y las zonas circundantes.
+                    </p>
+                    <p>
+                        Sé el mago o bruja que quieres ser. Aprende hechizos, prepara pociones, cultiva plantas y cuida
+                        de
+                        animales mágicos a lo largo de tu aventura. Selecciona una casa, forja relaciones y domina
+                        habilidades
+                        para convertirte en la bruja o el mago que quieres ser.
+                    </p>
+                    <p>
+                        Una aventura en el mundo mágico. Experimenta el mundo mágico en una época inexplorada y revela
+                        una
+                        verdad oculta del pasado. Lucha contra trols, magos tenebrosos, goblins y mucho más, y
+                        enfréntate a un
+                        peligroso villano que amenaza el destino del mundo mágico.
+                    </p>
+                </div>
+                <div class="column">
+                    <figure class="image is-3by3 is-hidden-mobile">
+                        <img src="hogwarts.jpeg" alt="Placeholder image">
+                    </figure>
+                    <div class="level-item has-text-centered mt-5">
+
+                        <button class="button is-primary js-modal-trigger" data-target="modal-1">Detalles</button>
+    
+                    </div>
+                </div>
+
+              
+            </div>
+
+            <div class="modal is-fullwidth is-mobile" id="modal-1">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Hogwarts Legacy</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body has-text-justified">
+                        <strong>Características:</strong><br>
+
+                        <ul>
+                            <li><strong>Explora un mundo abierto</strong><br>
+                                El mundo mágico te aguarda. Explora y recorre libremente el Castillo de
+                                Hogwarts, Hogsmeade,
+                                el Bosque
+                                Prohibido y las tierras que lo rodean.</li><br>
+
+                            <li><strong>Sé el mago o la bruja que quieras ser</strong><br>
+                                Aprende hechizos, elabora pociones, cultiva plantas y cuida de animales
+                                fantásticos a lo largo
+                                del
+                                viaje. Sé seleccionado para tu casa, forja relaciones y aprende las habilidades
+                                que te
+                                conducirán a
+                                convertirte en el mago o bruja que quieras ser.</li><br>
+
+                            <li><strong>Vive una aventura nueva en el mundo mágico</strong><br>
+                                Vive el mundo mágico en una época remota sin explorar y descubre una verdad
+                                oculta de ese
+                                pasado.
+                                Combate contra trols, magos tenebrosos, duendes y más en tu camino hacia la gran
+                                batalla
+                                contra un
+                                peligroso enemigo que amenaza el destino del mundo mágico.</li><br>
+
+                            <li><strong>*Requiere conexión a internet.</strong></li>
+                        </ul>
+                        <strong>Galería:</strong><br>
+                        <figure class="image is-16by9">
+                            <img src="hogwarts-legacy img1.jpg">
+                        </figure>
+                        <hr> <!-- Separador horizontal -->
+                        <figure class="image is-16by9">
+                            <img src="hogwarts-legacy-img2.webp">
+                        </figure>
+                    </section>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer class="footer mt-3">
+            <div class="content">
+                <nav class="level">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-home"></i></span> Home
+                        </a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-info-circle"></i></span> Sobre nosotros
+                        </a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-cogs"></i></span> Servicios
+                        </a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-envelope"></i></span> Contacto
+                        </a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-shield-alt"></i></span> Política de privacidad
+                        </a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" href="#">
+                            <span class="icon"><i class="fas fa-file-contract"></i></span> Terminos de servicio
+                        </a>
+                    </p>
+                </nav>
+                <div class="has-text-centered">
+                    <p>&copy; 2023 EPICGAME</p>
+                </div>
+            </div>
+        </footer>

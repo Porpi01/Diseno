@@ -8,7 +8,7 @@
   <script src="index.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -98,14 +98,14 @@
   <!-- Notificación -->
   <section>
     <div class="notification is-primary">
-      ¡Oferta especial por tiempo limitado! ¡Compra ahora y obtén un descuento del 20%!
+      ¡Venta especial por tiempo limitado! ¡Compra ahora y obtén un descuento del 20%!
     </div>
   </section>
   <!-- Tabs -->
   <section>
     <div class="tabs is-centered">
       <ul>
-        <li class="is-active"><a href="#videojuegos">Ofertas</a></li>
+        <li class="is-active"><a href="#videojuegos">Seminuevos</a></li>
         <li><a href="#categorias">Nuevos lanzamientos</a></li>
         <li><a href="#contacto">Eventos</a></li>
       </ul>
@@ -210,7 +210,7 @@
 
           </div>
           <!-- Notificación horario -->
-          <div class="notification is-warning">
+          <div class="notification is-success" id="notifidelete">
             <button class="delete"></button>
             ¡Atención! Cambios en el horario de atención.
           </div>
@@ -227,83 +227,43 @@
 
         <!-- Catálogo de videojuegos -->
         <div class="column is-three-quarters-table ">
-          <h1 class="title">Catálogo de Videojuegos</h1>
+          <h1 class="title has-text-centered">Catálogo de Videojuegos</h1>
           <div class="columns is-multiline">
             <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-3by3">
-                    <img src="Hogwarts_legacy.png" alt="Placeholder image">
+                    <a href="hogwarts_legacy.html">
+                      <img src="Hogwarts_legacy.png" alt="Placeholder image">
+                    </a>
                   </figure>
                 </div>
                 <div class="card-content">
                   <p class="title is-4">Hogwats Legacy</p>
                   <p class="subtitle is-6">PEGI 12</p>
-                  <p>Venta: 44´99€</p>
-                  <p>Compra: 22´99€</p>
-                  <div class="level">
-
-                    <div class="level-item has-text-centered">
-
-                      <button class="button is-primary js-modal-trigger" data-target="modal-1">Detalles</button>
-
+                  <p>Precio: 44´99€</p>
+                  <p>Venta: 22´99€</p>
+                  <div class="level ">
+                    <div class="level-item">
+                      <button class="button is-primary" id="vender">Vender</button>
+                     
+                    </div>
+                    <div class="level-item">
+                      <button class="button is-primary" id="comprar">Comprar</button>
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-info">Nintendo Switch</span>
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">PS5</span>
+                      <span class="tag is-success" id="nintendo">Nintendo Switch</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
                     </div>
 
                   </div>
                 </div>
 
-                <div class="modal is-fullwidth is-mobile" id="modal-1">
-                  <div class="modal-background"></div>
-                  <div class="modal-card">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title">Hogwarts Legacy</p>
-                      <button class="delete" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                      <strong>Características:</strong><br>
-
-                      <ul>
-                        <li><strong>Explora un mundo abierto</strong><br>
-                          El mundo mágico te aguarda. Explora y recorre libremente el Castillo de Hogwarts, Hogsmeade,
-                          el Bosque
-                          Prohibido y las tierras que lo rodean.</li><br>
-
-                        <li><strong>Sé el mago o la bruja que quieras ser</strong><br>
-                          Aprende hechizos, elabora pociones, cultiva plantas y cuida de animales fantásticos a lo largo
-                          del
-                          viaje. Sé seleccionado para tu casa, forja relaciones y aprende las habilidades que te
-                          conducirán a
-                          convertirte en el mago o bruja que quieras ser.</li><br>
-
-                        <li><strong>Vive una aventura nueva en el mundo mágico</strong><br>
-                          Vive el mundo mágico en una época remota sin explorar y descubre una verdad oculta de ese
-                          pasado.
-                          Combate contra trols, magos tenebrosos, duendes y más en tu camino hacia la gran batalla
-                          contra un
-                          peligroso enemigo que amenaza el destino del mundo mágico.</li><br>
-
-                        <li><strong>*Requiere conexión a internet.</strong></li>
-                      </ul>
-                      <strong>Galería:</strong><br>
-                      <figure class="image is-16by9">
-                        <img src="hogwarts-legacy img1.jpg">
-                      </figure>
-                      <hr> <!-- Separador horizontal -->
-                      <figure class="image is-16by9">
-                        <img src="hogwarts-legacy-img2.webp">
-                      </figure>
-                    </section>
-
-                  </div>
-                </div>
+            
               </div>
             </div>
 
@@ -317,21 +277,21 @@
                 <div class="card-content">
                   <p class="title is-4">Gran Turismo</p>
                   <p class="subtitle is-6">PEGI 3</p>
-                  <p>Venta: 39´99€</p>
-                  <p>Compra: 20´99€</p>
+                  <p>Precio: 39´99€</p>
+                  <p>Venta: 20´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-2">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-2" id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">PS5</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
                     </div>
 
                   </div>
@@ -383,22 +343,22 @@
                 <div class="card-content">
                   <p class="title is-4">Mortal Kombat</p>
                   <p class="subtitle is-6">PEGI 18</p>
-                  <p>Venta: 39´99€</p>
-                  <p>Compra: 20´99€</p>
+                  <p>Precio: 39´99€</p>
+                  <p>Venta: 20´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-3">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-3" id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">Nintendo Switch</span>
-                      <span class="tag is-success">PS5</span>
-                      <span class="tag is-success">Xbox Series X</span>
+                      <span class="tag is-success" id="nintendo">Nintendo Switch</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
+                      <span class="tag is-success" id="xboxX">Xbox Series X</span>
                     </div>
 
                   </div>
@@ -447,24 +407,24 @@
                 <div class="card-content">
                   <p class="title is-4">Dead Island 2</p>
                   <p class="subtitle is-6">PEGI 18</p>
-                  <p>Venta: 29´99€</p>
-                  <p>Compra: 15´99€</p>
+                  <p>Precio: 29´99€</p>
+                  <p>Venta: 15´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-4">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-4" id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">PC</span>
-                      <span class="tag is-success">PS5</span>
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">Xbox Series X</span>
-                      <span class="tag is-success">Xbox One</span>
+                      <span class="tag is-success" id="pc">PC</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success" id="xboxX">Xbox Series X</span>
+                      <span class="tag is-success" id="xbox">Xbox One</span>
                     </div>
 
                   </div>
@@ -522,23 +482,23 @@
                 <div class="card-content">
                   <p class="title is-4">EA Sports FC 24</p>
                   <p class="subtitle is-6">PEGI 3</p>
-                  <p>Venta: 79´99€</p>
-                  <p>Compra: 37´99€</p>
+                  <p>Precio: 79´99€</p>
+                  <p>Venta: 37´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-5">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-5" id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">PS5</span>
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">Nintendo Switch</span>
-                      <span class="tag is-success">Xbox Series X</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success " id="switch">Nintendo Switch</span>
+                      <span class="tag is-success" id="xboxX">Xbox Series X</span>
                     </div>
 
                   </div>
@@ -578,23 +538,23 @@
                 <div class="card-content">
                   <p class="title is-4">Sonic Superstars</p>
                   <p class="subtitle is-6">PEGI 3</p>
-                  <p>Venta: 34´99€</p>
-                  <p>Compra: 24´99€</p>
+                  <p>Precio: 34´99€</p>
+                  <p>Venta: 24´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-6">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-6"id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
-                      <span class="tag is-success">Nintendo Switch</span>
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">PS5</span>
-                      <span class="tag is-success">Xbox One</span>
-                      <span class="tag is-success">Xbox Series X</span>
+                      <span class="tag is-success" id="switch">Nintendo Switch</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
+                      <span class="tag is-success" id="xbox">Xbox One</span>
+                      <span class="tag is-success" id="xboxX">Xbox Series X</span>
 
                     </div>
 
@@ -613,7 +573,7 @@
 
                       <ul>
                         <li><strong>Una nueva forma de jugar: </strong><br>
-                          El Sonic clásico que conoces y amas reinventado para las plataformas modernas. </li><br>
+                          El Sonic clásico que conoces y amas reinVentado para las plataformas modernas. </li><br>
 
                         <li><strong>Juega con tus personajes favoritos:</strong><br>
                           Elige entre Sonic, Tails, Knuckles y Amy Rose y aprovecha sus habilidades únicas para explorar
@@ -650,25 +610,25 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <p class="title is-6">Assassin´s Creed Mirage</p>
+                  <p class="title is-5">Assassin´s Creed </p>
                   <p class="subtitle is-7">PEGI 18</p>
-                  <p>Venta: 39´99€</p>
-                  <p>Compra: 15´99€</p>
+                  <p>Precio: 39´99€</p>
+                  <p>Venta: 15´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-7">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-7"id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">PS4</span>
-                      <span class="tag is-success">PS5</span>
-                      <span class="tag is-success">Xbox One</span>
-                      <span class="tag is-success">Xbox Series X</span>
+                      <span class="tag is-success" id="ps4">PS4</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
+                      <span class="tag is-success" id="xbox">Xbox One</span>
+                      <span class="tag is-success" id="xboxX">Xbox Series X</span>
 
                     </div>
 
@@ -709,22 +669,22 @@
                   </figure>
                 </div>
                 <div class="card-content">
-                  <p class="title is-6">Marvel´s Spiderman 2</p>
+                  <p class="title is-4">Spiderman 2</p>
                   <p class="subtitle is-6">PEGI 16</p>
-                  <p>Venta: 79´99€</p>
-                  <p>Compra: 35´99€</p>
+                  <p>Precio: 79´99€</p>
+                  <p>Venta: 35´99€</p>
                   <div class="level">
 
                     <div class="level-item has-text-centered">
 
-                      <button class="button is-primary js-modal-trigger" data-target="modal-8">Detalles</button>
+                      <button class="button is-primary js-modal-trigger" data-target="modal-8"id="detalles">Detalles</button>
 
                     </div>
                   </div>
                   <div class="level-item has-text-centered">
                     <div class="tags is-hidden-desktop is-hidden-tablet has-text-centered">
 
-                      <span class="tag is-success">PS5</span>
+                      <span class="tag is-success" id="ps5">PS5</span>
 
 
                     </div>
@@ -736,7 +696,7 @@
                   <div class="modal-background"></div>
                   <div class="modal-card">
                     <header class="modal-card-head">
-                      <p class="modal-card-title">Marvel´s Spiderman 2</p>
+                      <p class="modal-card-title ">Marvel´s Spiderman 2</p>
                       <button class="delete" aria-label="close"></button>
                     </header>
                     <section class="modal-card-body">
