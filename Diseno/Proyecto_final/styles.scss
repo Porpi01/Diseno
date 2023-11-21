@@ -5,68 +5,76 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+//Variables
+$background-color: #000000;
+$colorFondoIconos: #fff;
+$colorLetras: white;
+$colorBotonMenuDetalle: #ff9800;
+$border-color: #ff9800;
+$botonVender: #e22b2b;
+$botonComprar: #191970;
+$margin-top: 5px;
+$cardTitleColor: #ff9800;
+
+
+
 .navbar {
-  background-color: #000000;
+  background-color: $background-color;
 
   .navbar-brand .navbar-item {
-    color: #fff;
+    color: $colorFondoIconos;
   }
 
   .navbar-burger span {
-    background-color: #fff;
+    background-color: $colorFondoIconos;
   }
 
 
 
   .navbar-menu .navbar-item {
-    color: #fff;
+    color: $colorFondoIconos;
+    background-color: $background-color;
 
     .icon {
-      color: #fff;
-      /* Color de los íconos */
+      color: $colorFondoIconos;
+
     }
 
 
 
     &.has-dropdown .navbar-link {
-      color: white;
-      background-color: #000000;
+      color: $colorFondoIconos;
+      background-color: $background-color;
     }
 
     &.has-dropdown .navbar-dropdown {
-      background-color: #000000;
+      background-color: $background-color;
     }
+
   }
 
-  .navbar-brand .navbar-item {
-    color: #fff;
-    background-color: #000000;
-  }
 
-  .navbar-menu .navbar-dropdown {
-    background-color: #000000;
-    /* Fondo del menú desplegable */
-  }
 }
 
 .button.is-primary {
-  background-color: #ff9800;
-  border-color: #ff9800;
+  background-color: $colorBotonMenuDetalle;
+  border-color: $colorBotonMenuDetalle;
 
   &:hover {
-    background-color: lighten(#ff9800, 10%);
-    border-color: lighten(#ff9800, 10%);
+    background-color: lighten($colorBotonMenuDetalle, 10%);
+    border-color: lighten($colorBotonMenuDetalle, 10%);
   }
 }
 
 // Estilos para la notificación
 .notification {
   background-color: #f4f4f4;
-  color: #000000;
-  border-color: #ff9800;
+  color: $background-color;
+  border-color: $colorBotonMenuDetalle;
 
   &.is-primary {
-    background-color: #ff9800;
+    background-color: $colorBotonMenuDetalle;
     color: #fff;
   }
 }
@@ -78,26 +86,26 @@
 
 
         &:hover {
-          color: darken(#ff9800, 10%);
+          color: darken($colorBotonMenuDetalle, 10%);
         }
       }
 
       &.is-active a {
-        color: #ff9800;
+        color: $colorBotonMenuDetalle;
       }
     }
   }
 }
 
-#vender{
-  background-color:  #e22b2b;
-  border-color:  #e22b2b;
+#vender {
+  background-color: $botonVender;
+  border-color: $botonVender;
   margin-top: 5px;
 }
 
 #comprar {
-  background-color:  #191970;
-  border-color:  #191970;
+  background-color: $botonComprar;
+  border-color: $botonComprar;
   margin-top: 5px;
 }
 
@@ -107,13 +115,14 @@
 
 // Estilos para el footer
 .footer {
-  background-color:  #000000;
-  color: #ff9800;
+  background-color: $background-color;
+  color: $colorBotonMenuDetalle;
+
   .link {
-    color: #ff9800;
+    color: $colorBotonMenuDetalle;
 
     &:hover {
-      color: lighten(#ff9800, 20%);
+      color: lighten($colorBotonMenuDetalle, 20%);
     }
   }
 }
@@ -121,55 +130,116 @@
 // Estilos para botones
 .button {
   &.is-primary {
-    background-color: #ff9800;
-    border-color: #ff9800;
+    background-color: $colorBotonMenuDetalle;
+    border-color: $colorBotonMenuDetalle;
 
     &:hover {
-      background-color: lighten(#ff9800, 10%);
-      border-color: lighten(#ff9800, 10%);
+      background-color: lighten($colorBotonMenuDetalle, 10%);
+      border-color: lighten($colorBotonMenuDetalle, 10%);
     }
   }
 }
 
 #notifidelete {
-  background-color: #000000;
+  background-color: $background-color;
   color: white;
 }
-#detalles{
+
+#detalles {
   margin-top: 5px;
 }
 
 #ps5 {
   background-color: aquamarine;
-  color:white;
+  color: $colorFondoIconos;
 }
 
 #ps4 {
-  background-color:lightsalmon;
-  color:white;
-}
-
-#pc{
-  background-color:lightpink;
-  color: white;
-}
-
-#xbox {
-  background-color:rgb(240, 240, 167);
-  color:white;
-}
-
-#xboxX {
-  background-color:lightcoral;
-  color:white;
-}
-
-#switch {
-  background-color:lightseagreen;
-  color:white;
+  background-color: lightsalmon;
+  color: $colorFondoIconos;
 }
 
 #pc {
-  background-color:lightblue;
-  color:white;
+  background-color: lightpink;
+  color: $colorFondoIconos;
+}
+
+#xbox {
+  background-color: rgb(240, 240, 167);
+  color: $colorFondoIconos;
+}
+
+#xboxX {
+  background-color: lightcoral;
+  color: $colorFondoIconos;
+}
+
+#switch {
+  background-color: lightseagreen;
+  color: $colorFondoIconos;
+}
+
+.card {
+  .card-content {
+
+    .title {
+      color: $cardTitleColor;
+
+    }
+
+    .modal-card-head {
+      background-color: $cardTitleColor;
+    }
+
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
+
+    }
+
+    .button {
+      margin-top: 1rem;
+
+    }
+
+
+  }
+}
+
+.modal {
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.7);
+
+  }
+
+  .modal-card {
+    background-color: $background-color;
+    color: $background-color;
+
+
+    .modal-card-title {
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .modal-card-body {
+      padding: 1.5rem;
+      text-align: justify;
+
+    }
+
+    .modal-card-head {
+      background-color: $background-color;
+    }
+
+    .delete {
+      color: $background-color;
+
+    }
+  }
+
 }

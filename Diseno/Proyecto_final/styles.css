@@ -10298,25 +10298,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .navbar .navbar-menu .navbar-item {
   color: #fff;
+  background-color: #000000;
 }
 .navbar .navbar-menu .navbar-item .icon {
   color: #fff;
   /* Color de los íconos */
 }
 .navbar .navbar-menu .navbar-item.has-dropdown .navbar-link {
-  color: white;
+  color: #fff;
   background-color: #000000;
 }
 .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown {
   background-color: #000000;
-}
-.navbar .navbar-brand .navbar-item {
-  color: #fff;
-  background-color: #000000;
-}
-.navbar .navbar-menu .navbar-dropdown {
-  background-color: #000000;
-  /* Fondo del menú desplegable */
 }
 
 .button.is-primary {
@@ -10388,37 +10381,71 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 #ps5 {
   background-color: aquamarine;
-  color: white;
+  color: #fff;
 }
 
 #ps4 {
   background-color: lightsalmon;
-  color: white;
+  color: #fff;
 }
 
 #pc {
   background-color: lightpink;
-  color: white;
+  color: #fff;
 }
 
 #xbox {
   background-color: rgb(240, 240, 167);
-  color: white;
+  color: #fff;
 }
 
 #xboxX {
   background-color: lightcoral;
-  color: white;
+  color: #fff;
 }
 
 #switch {
   background-color: lightseagreen;
-  color: white;
+  color: #fff;
 }
 
-#pc {
-  background-color: lightblue;
+.card .card-content .title {
+  color: #ff9800;
+}
+.card .card-content .modal-card-head {
+  background-color: #ff9800;
+}
+.card .card-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.card .card-content .button {
+  margin-top: 1rem;
+}
+
+.modal .modal-background {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal .modal-card {
+  background-color: #000000;
+  color: #000000;
+}
+.modal .modal-card .modal-card-title {
   color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.modal .modal-card .modal-card-body {
+  padding: 1.5rem;
+  text-align: justify;
+}
+.modal .modal-card .modal-card-head {
+  background-color: #000000;
+}
+.modal .modal-card .delete {
+  color: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
