@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Tienda de Videojuegos</title>
+  <title>Epicgame</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <script src="index.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="navbar-end">
-        <div class="panel-block is-hidden-mobile">
+        <div class="panel-block is-hidden-mobile is-hidden-tablet">
           <p class="control has-icons-left">
             <input class="input" type="text" placeholder="Search">
             <span class="icon is-left">
@@ -114,7 +114,7 @@
   <section id="catalogo" class="section">
     <div class="container">
       <div class="columns">
-        <!-- Filtros móvil -->
+        <!-- Filtros móvil-->
         <div class="column is-one-quarter">
           <div class="level is-mobile">
             <div class="level-left">
@@ -123,7 +123,7 @@
             </div>
             <!-- Buscador móvil-->
             <div class="level-right">
-              <div class="panel-block is-hidden-desktop is-hidden-tablet">
+              <div class="panel-block is-hidden-desktop ">
                 <p class="control has-icons-left">
                   <input class="input" type="text" placeholder="Search">
                   <span class="icon is-left">
@@ -214,15 +214,58 @@
             <button class="delete"></button>
             ¡Atención! Cambios en el horario de atención.
           </div>
+
           <!-- Videos de estrenos  -->
 
-          <figure class="image is-16by9 mt-5 is-hidden-mobile">
+          <figure class="image is-16by9 mt-5 is-hidden-mobile ">
             <iframe class="has-ratio" width="560" height="315"
               src="https://www.youtube.com/embed/p8UsHhOjjzg?si=-GNWTuzutv7XoSJY" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </figure>
+
+          <figure class="image is-16by9 mt-5 is-hidden-mobile is-hidden-desktop">
+            <iframe class="has-ratio" width="560" height="315"
+              src="https://www.youtube.com/embed/mfnc4_LCPNg?si=V7-b5lS4Td_W6bQ4" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </figure>
+
+          <figure class="image is-16by9 mt-5 is-hidden-mobile is-hidden-desktop">
+            <iframe class="has-ratio" width="560" height="315"
+              src="https://www.youtube.com/embed/jSPZtVbVIT8?si=yUCReHHfeqbew4SH" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </figure>
+
+          <section>
+            <div class="notification is-primary mt-5  " id="not3">
+              ¡Oferta Relámpago! Compra ahora y obtén envío gratis en todos los pedidos durante las próximas 24 horas.
+            </div>
+          </section>
+
+          <section>
+            <div class="notification is-primary mt-5  is-hidden-mobile is-hidden-desktop" id="not4">
+              ¡Descubre nuestras novedades! Echa un vistazo a nuestra nueva colección de productos exclusivos,
+              ¡disponibles por tiempo limitado!
+            </div>
+          </section>
+
+          <section>
+            <div class="notification is-primary mt-5  is-hidden-mobile is-hidden-desktop" id="not5">
+              ¡Black Friday en marcha! Compra ahora y recibe un cupón de descuento del 20% para tu próxima compra.
+              ¡Aprovecha esta oportunidad única </div>
+          </section>
+
+          <section>
+            <div class="notification is-primary mt-5  is-hidden-mobile is-hidden-desktop" id="not6">
+              ¡Lanzamiento Exclusivo! Descubre nuestra nueva línea de productos premium antes que nadie. ¡Añade estilo a
+              tu vida con nuestras novedades! </div>
+          </section>
+
         </div>
 
         <!-- Catálogo de videojuegos -->
@@ -743,8 +786,6 @@
 
 
   </section>
-
-
 
   <!-- Footer -->
   <footer class="footer">

@@ -1,12 +1,15 @@
+
+/* Estilos generales */
 @import 'node_modules/bulma/bulma';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* Configuración de fuentes */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
 
-//Variables
+/* Variables de colores */
 $background-color: #000000;
 $colorFondoIconos: #fff;
 $colorLetras: white;
@@ -18,7 +21,7 @@ $margin-top: 5px;
 $cardTitleColor: #ff9800;
 
 
-
+/* Estilos para la barra de navegación */
 .navbar {
   background-color: $background-color;
 
@@ -66,8 +69,7 @@ $cardTitleColor: #ff9800;
     border-color: lighten($colorBotonMenuDetalle, 10%);
   }
 }
-
-// Estilos para la notificación
+/* Estilos para notificaciones */
 .notification {
   background-color: #f4f4f4;
   color: $background-color;
@@ -79,6 +81,23 @@ $cardTitleColor: #ff9800;
   }
 }
 
+#not3 {
+  background-color: darkred;
+}
+
+#not4 {
+  background-color: indigo;
+}
+
+
+#not5 {
+  background-color:#e22b2b;
+}
+
+#not6 {
+  background-color:cadetblue;
+}
+/* Estilos para pestañas */
 .tabs {
   ul {
     li {
@@ -97,12 +116,13 @@ $cardTitleColor: #ff9800;
   }
 }
 
+/* Estilos botón vender */
 #vender {
   background-color: $botonVender;
   border-color: $botonVender;
   margin-top: 5px;
 }
-
+/* Estilos botón comprar */
 #comprar {
   background-color: $botonComprar;
   border-color: $botonComprar;
@@ -113,7 +133,7 @@ $cardTitleColor: #ff9800;
 
 
 
-// Estilos para el footer
+/* Estilos footer */
 .footer {
   background-color: $background-color;
   color: $colorBotonMenuDetalle;
@@ -127,7 +147,7 @@ $cardTitleColor: #ff9800;
   }
 }
 
-// Estilos para botones
+/* Estilos botones */
 .button {
   &.is-primary {
     background-color: $colorBotonMenuDetalle;
@@ -146,9 +166,10 @@ $cardTitleColor: #ff9800;
 }
 
 #detalles {
-  margin-top: 5px;
+  margin-top: $margin-top;
 }
 
+/* Estilos tags */
 #ps5 {
   background-color: aquamarine;
   color: $colorFondoIconos;
@@ -179,6 +200,7 @@ $cardTitleColor: #ff9800;
   color: $colorFondoIconos;
 }
 
+/* Estilos para cards */
 .card {
   .card-content {
 
@@ -208,7 +230,7 @@ $cardTitleColor: #ff9800;
 
   }
 }
-
+/* Estilos para modals */
 .modal {
   .modal-background {
     background-color: rgba(0, 0, 0, 0.7);

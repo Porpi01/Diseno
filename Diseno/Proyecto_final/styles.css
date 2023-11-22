@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Estilos generales */
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
@@ -10283,10 +10284,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+/* Configuración de fuentes */
 * {
   font-family: "Roboto", sans-serif;
 }
 
+/* Variables de colores */
+/* Estilos para la barra de navegación */
 .navbar {
   background-color: #000000;
 }
@@ -10302,7 +10306,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .navbar .navbar-menu .navbar-item .icon {
   color: #fff;
-  /* Color de los íconos */
 }
 .navbar .navbar-menu .navbar-item.has-dropdown .navbar-link {
   color: #fff;
@@ -10321,6 +10324,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-color: #ffad33;
 }
 
+/* Estilos para notificaciones */
 .notification {
   background-color: #f4f4f4;
   color: #000000;
@@ -10331,6 +10335,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fff;
 }
 
+#not3 {
+  background-color: darkred;
+}
+
+#not4 {
+  background-color: indigo;
+}
+
+#not5 {
+  background-color: #e22b2b;
+}
+
+#not6 {
+  background-color: cadetblue;
+}
+
+/* Estilos para pestañas */
 .tabs ul li a:hover {
   color: #cc7a00;
 }
@@ -10338,18 +10359,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #ff9800;
 }
 
+/* Estilos botón vender */
 #vender {
   background-color: #e22b2b;
   border-color: #e22b2b;
   margin-top: 5px;
 }
 
+/* Estilos botón comprar */
 #comprar {
   background-color: #191970;
   border-color: #191970;
   margin-top: 5px;
 }
 
+/* Estilos footer */
 .footer {
   background-color: #000000;
   color: #ff9800;
@@ -10361,6 +10385,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #ffc166;
 }
 
+/* Estilos botones */
 .button.is-primary {
   background-color: #ff9800;
   border-color: #ff9800;
@@ -10379,6 +10404,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 5px;
 }
 
+/* Estilos tags */
 #ps5 {
   background-color: aquamarine;
   color: #fff;
@@ -10409,6 +10435,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fff;
 }
 
+/* Estilos para cards */
 .card .card-content .title {
   color: #ff9800;
 }
@@ -10425,6 +10452,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 1rem;
 }
 
+/* Estilos para modals */
 .modal .modal-background {
   background-color: rgba(0, 0, 0, 0.7);
 }
